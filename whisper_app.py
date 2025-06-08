@@ -19,7 +19,7 @@ utils.WriteJSON = WriteJSON
 model = whisper.load_model("large")
 result = whisper.transcribe(
   model,
-  './zh.mp3',
+  './videoFiles/zh.mp3',
   verbose=True,
   language='zh',
   task='translate'
@@ -31,7 +31,7 @@ writer(result, './output/english.json', {'output_format': 'json'})
 
 result_transcribe = whisper.transcribe(
   model,
-  './zh.mp3',
+  './videoFiles/zh.mp3',
   verbose=True,
   language='zh',
   task='transcribe'
